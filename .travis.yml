@@ -5,6 +5,8 @@ node-js:
 cache:
   directories:
     - node_modules
+script:
+- CI=false npm run build
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_API
