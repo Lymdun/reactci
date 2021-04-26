@@ -1,0 +1,9 @@
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_API
+  secret_access_key: $AWS_SECRET_KEY
+  bucket: "testesi4"
+  local_dir: build
+  acl: public_read
+  on:
+    branch: main
